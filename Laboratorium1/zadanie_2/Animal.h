@@ -25,5 +25,7 @@ class Animal{
 
         void voice();
         void info();
+
+        static void how_many_protected_animals(Animal* array, int size);
 };
 #endif // ANIMAL_H

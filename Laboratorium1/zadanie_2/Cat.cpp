@@ -50,6 +50,10 @@ void Cat::set_level_of_mouse_hunting(int value){
     }
 }
 
+int Cat::get_level_of_mouse_hunting(){
+    return level_of_mouse_hunting;
+}
+
 int Cat::get_mice(int index){
     if(index >= 0 && index < 5){
         return mice[index];
@@ -68,4 +72,14 @@ void Cat::info(){
         std::cout << mice[i] << " ";
     }
     std::cout << "]\n";
+}
+
+void Cat::how_many_cats(Cat* array, int size){
+    for(int i = 0; i < size; i++){
+        std::cout << array->get_name() << " - ";
+        for(int j = 0; j < 5; j++){
+            std::cout << array->get_mice(j) << " ";
+        }
+        std::cout << "\n";
+    }
 }

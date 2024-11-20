@@ -38,3 +38,13 @@ std::string Animal::get_name(){
 bool Animal::get_is_protected(){
     return is_protected;
 }
+
+void Animal::how_many_protected_animals(Animal* array, int size){
+    int sum = 0;
+    for(int i = 0; i < size; i++){
+        if(array[i].get_is_protected()){
+            sum += 1;
+        }
+    }
+    std::cout << "liczba chronionych zwierzat = " << sum << "\n";
+}

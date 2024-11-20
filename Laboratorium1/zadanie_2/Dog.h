@@ -22,5 +22,7 @@ class Dog : public Animal{
 
         void voice();
         void info();
+
+        static void how_many_tracker_dogs(Dog* array, int size);
 };
 #endif // DOG_H

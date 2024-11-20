@@ -19,8 +19,11 @@ class Cat : public Animal{
         void init_mice();
         void init_cat();
         void set_level_of_mouse_hunting(int value);
+        int get_level_of_mouse_hunting();
         int get_mice(int index);
         void voice();
         void info();
+
+        static void how_many_cats(Cat* array, int size);
 };
 #endif // CAT_H

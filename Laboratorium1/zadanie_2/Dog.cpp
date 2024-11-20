@@ -32,3 +32,13 @@ void Dog::info(){
     Animal::info();
     std::cout << breed << " " << level_of_tracker_skills << " " << level_of_guide_skills << "\n";
 }
+
+void Dog::how_many_tracker_dogs(Dog* array, int size){
+    int sum = 0;
+    for(int i = 0; i < size; i++){
+        if(array[i].level_of_tracker_skills > array[i].level_of_guide_skills){
+            sum += 1;
+        }
+    }
+    std::cout << "liczba psow przewodnikow = " << sum << "\n";
+}
