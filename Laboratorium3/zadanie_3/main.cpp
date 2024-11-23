@@ -9,19 +9,15 @@ void show_converting_from_grams(T value_in_grams){
 }
 
 
-
 template <int divider, typename T>
 void show_converting_from_grams(std::string value_in_grams){
     std::cout << "zły typ danych\n";
 }
+
 // template <int T_int, typename T>
 // void show_converting_from_grams(double value_in_grams){
 //     std::cout << "zły typ danych\n";
 // }
-
-
-
-
 
 
 int main(){
