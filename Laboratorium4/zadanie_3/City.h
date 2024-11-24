@@ -25,5 +25,7 @@ class City{
         int count_adults();
         void postal_codes();
 
+        std::vector<Citizen> get_citizens();
+
 };
 #endif // CITY_H

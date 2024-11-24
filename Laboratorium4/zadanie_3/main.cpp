@@ -4,6 +4,16 @@
 #include "City.h"
 
 
+
+template <typename T>
+void show_vector(std::vecotr<T> my_vector){
+    for(auto it = my_vector.begin(); it != my_vector.end(); it++){
+        std::cout << *it << " ";
+    }
+    std::cout << std::endl;
+};
+
+
 int main(){
 
     Citizen citizen_1 = Citizen("Adam", "Kowalski", 32, 'M', "12-345");
@@ -33,3 +43,4 @@ int main(){
 
     return 0;
 }
+

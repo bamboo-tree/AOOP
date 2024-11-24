@@ -79,3 +79,7 @@ void City::postal_codes(){
         std::cout << map_it->first << " = " << map_it->second << "\n";
     }
 }
+
+std::vector<Citizen> City::get_citizens(){
+    return citizens;
+}
