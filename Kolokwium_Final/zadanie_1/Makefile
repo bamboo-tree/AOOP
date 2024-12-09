@@ -5,8 +5,7 @@ main: main.o Bazowa.o Pochodna.o
 main.o: main.cpp
 	g++ -c main.cpp
 
-Bazowa.o : Bazowa.h
-Pochodna.o : Pochodna.h
+*.o : *.h
 
 clear:
 	rm *.o
