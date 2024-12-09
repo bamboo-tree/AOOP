@@ -1,10 +1,12 @@
-main: main.o
-	g++ -o app main.o
+main: main.o GrupaDziekanska.o
+	g++ -o app main.o GrupaDziekanska.o
 	./app
 
 main.o: main.cpp
 	g++ -c main.cpp
 
+*.o: *.h
+
 clear:
-	rm *.o
 	rm app
+	rm *.o
