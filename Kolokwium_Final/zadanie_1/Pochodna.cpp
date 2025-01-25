@@ -1,6 +1,8 @@
 #include "Pochodna.h"
 
-Pochodna::Pochodna(int _liczba) : Bazowa(_liczba*100){};
+Pochodna::Pochodna(int _liczba) : Bazowa(_liczba){
+    liczba = _liczba * 100;
+};
 void Pochodna::print(){
     std::cout << "liczba pochodna : " << liczba << '\n';
 }
